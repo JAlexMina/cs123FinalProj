@@ -1,0 +1,534 @@
+<scenefile>
+    <globaldata>
+	<diffusecoeff v="0.4"/>
+	<specularcoeff v="0.2"/>
+	<ambientcoeff v="0.8"/>
+    </globaldata>
+
+    <cameradata>
+	<pos x="0" y="0" z="8"/>
+	<look x="0" y="0" z="-1" />
+	<up x="0" y="1" z="0"/>
+	<heightangle v="45"/>
+    </cameradata>
+
+    <!-- <lightdata>
+	<id v="0"/>
+	<color r="1" g="1" b="1"/>
+	<position x="-.8" y="10" z="-.1"/>
+    </lightdata>
+
+    <lightdata>
+  <id v="1"/>
+  <color r="1" g="1" b="1"/>
+  <position x=".05" y="1" z=".8"/>
+    </lightdata> -->
+
+
+
+
+    <lightdata>
+    <id v="0"/>
+    <color r=".75" g=".75" b=".72"/>
+    <position x="-2" y="2.2" z="5"/>
+    </lightdata>
+
+    <lightdata>
+    <id v="1"/>
+    <color r=".75" g=".75" b=".72"/>
+    <position x="2" y="2.2" z="-5"/>
+    </lightdata>
+
+
+    <lightdata>
+    <id v="2"/>
+    <color r=".75" g=".75" b=".72"/>
+    <position x="-3.45" y="2.0666567" z="16.6"/>
+    </lightdata>
+
+    <lightdata>
+    <id v="3"/>
+    <color r=".55" g=".55" b=".52"/>
+    <position x="0.166033" y="2.149" z="6.60674"/>
+    </lightdata>
+
+
+
+
+
+  <!-- Moving directional lights are hardocded into program -->
+
+    <object type="tree" name="root">
+		<transblock>
+			<object type="tree">
+
+        <!-- SIDE ROOM1 -->
+				<transblock>
+				    <translate x="6" y="1.5" z="0"/>
+				    <scale x=".1" y="5" z="12"/>
+				    <object type="primitive" name="cube" >
+
+					 <diffuse r="1" g=".75" b=".75"/>
+				    </object>
+				</transblock>
+
+        <transblock>
+				    <translate x="5.98" y="-.9" z="0"/>
+				    <scale x=".1" y="0.15" z="12"/>
+				    <object type="primitive" name="cube" >
+
+					<diffuse r=".9" g=".9" b=".9"/>
+				    </object>
+				</transblock>
+
+
+
+
+        <!-- SIDE ROOM1 -->
+				<transblock>
+				    <translate x="-6" y="1.5" z="0"/>
+				    <scale x=".1" y="5" z="12"/>
+				    <object type="primitive" name="cube" >
+					<diffuse r="1" g=".75" b=".75"/>
+				    </object>
+				</transblock>
+
+        <transblock>
+				    <translate x="-5.98" y="-0.9" z="0"/>
+				    <scale x=".1" y="0.15" z="12"/>
+				    <object type="primitive" name="cube" >
+					<diffuse r=".9" g=".9" b=".9"/>
+				    </object>
+				</transblock>
+
+
+        <!-- FAR WALL  (DOOR)  ROOM1 -->
+				<transblock>
+				    <translate x="0" y = "1.5" z="-6"/>
+				    <scale x="12" y="5" z="0.1"/>
+				    <object type="primitive" name="cube" >
+					<diffuse r="1" g=".75" b=".75"/>
+				    </object>
+				</transblock>
+
+        <transblock>
+				    <translate x="0" y="-0.9" z="-5.98"/>
+				    <scale x="12" y="0.15" z="0.1"/>
+				    <object type="primitive" name="cube" >
+
+					<diffuse r=".9" g=".9" b=".9"/>
+				    </object>
+				</transblock>
+
+        <!-- NEAR WALL (OPPOSITE OF DOOR) ROOM1/Room2 -->
+        <!-- PART1 (right/big) -->
+				<transblock>
+				    <translate x="-2" y ="1.5" z="6"/>
+				    <scale x="8" y ="5" z="0.1"/>
+				    <object type="primitive" name="cube" >
+					<diffuse r="1" g=".75" b=".75"/>
+				    </object>
+				</transblock>
+
+        <transblock>
+				    <translate x="-2" y="-.9" z="5.98"/>
+				    <scale x="8" y="0.15" z="0.1"/>
+				    <object type="primitive" name="cube" >
+				<diffuse r=".9" g=".9" b=".9"/>
+				    </object>
+				</transblock>
+
+        <transblock>
+				    <translate x="-2" y="-.9" z="6.02"/>
+				    <scale x="8" y="0.15" z="0.1"/>
+				    <object type="primitive" name="cube" >
+				<diffuse r=".9" g=".9" b=".9"/>
+				    </object>
+				</transblock>
+
+        <!-- PART2 (left/small) -->
+        <transblock>
+				    <translate x="4.5" y ="1.5" z="6"/>
+				    <scale x="3" y ="5" z="0.1"/>
+				    <object type="primitive" name="cube" >
+					<diffuse r="1" g=".75" b=".75"/>
+				    </object>
+				</transblock>
+
+        <transblock>
+				    <translate x="4.5" y="-.9" z="5.98"/>
+				    <scale x="3" y="0.15" z="0.1"/>
+				    <object type="primitive" name="cube" >
+              <diffuse r=".9" g=".9" b=".9"/>
+				    </object>
+				</transblock>
+
+        <transblock>
+				    <translate x="4.5" y="-.9" z="6.02"/>
+				    <scale x="3" y="0.15" z="0.1"/>
+				    <object type="primitive" name="cube" >
+              <diffuse r=".9" g=".9" b=".9"/>
+				    </object>
+				</transblock>
+
+
+        <!-- PART3 (top)-->
+        <transblock>
+				    <translate x="2.5" y ="2.5" z="6"/>
+				    <scale x="1.05" y ="3" z="0.1"/>
+				    <object type="primitive" name="cube" >
+				<diffuse r="1" g=".75" b=".75"/>
+				    </object>
+				</transblock>
+
+
+
+
+
+        <!-- SIDE ROOM2 -->
+				<transblock>
+				    <translate x="6" y="1.5" z="12"/>
+				    <scale x=".1" y="5" z="12"/>
+				    <object type="primitive" name="cube" >
+					  <diffuse r="1" g=".75" b=".75"/>
+				    </object>
+				</transblock>
+
+        <transblock>
+				    <translate x="5.98" y="-.9" z="12"/>
+				    <scale x=".1" y="0.15" z="12"/>
+				    <object type="primitive" name="cube" >
+					<diffuse r=".9" g=".9" b=".9"/>
+				    </object>
+				</transblock>
+
+
+        <!-- SIDE ROOM2 -->
+				<transblock>
+				    <translate x="-6" y="1.5" z="12"/>
+				    <scale x=".1" y="5" z="12"/>
+				    <object type="primitive" name="cube" >
+					<diffuse r="1" g=".75" b=".75"/>
+				    </object>
+				</transblock>
+
+        <transblock>
+				    <translate x="-5.98" y="-0.9" z="12"/>
+				    <scale x=".1" y="0.15" z="12"/>
+				    <object type="primitive" name="cube" >
+					<diffuse r=".9" g=".9" b=".9"/>
+				    </object>
+				</transblock>
+
+
+        <!-- FAR WALL  (DOOR)  ROOM2 -->
+				<transblock>
+				    <translate x="0" y = "1.5" z="18"/>
+				    <scale x="12" y="5" z="0.1"/>
+				    <object type="primitive" name="cube" >
+					<diffuse r="1" g=".75" b=".75"/>
+				    </object>
+				</transblock>
+
+        <transblock>
+				    <translate x="0" y="-0.9" z="17.96"/>
+				    <scale x="12" y="0.15" z="0.1"/>
+				    <object type="primitive" name="cube" >
+					<diffuse r=".9" g=".9" b=".9"/>
+				    </object>
+				</transblock>
+
+
+
+
+
+
+
+        <!-- OPEN DOOR -->
+
+        <transblock>
+				    <translate x="3.0" y="-1" z="5.90"/>
+				    <scale x="1.05" y="1" z="1"/>
+            <rotate x="0" y="1" z="0" angle="180"/>
+				    <object type="primitive" name="mesh" filename=":/mesh/opendoor.obj">
+					<diffuse r=".8" g=".8" b=".8"/>
+				    </object>
+				</transblock>
+
+        <!-- DOOR BRIDGE -->
+        <transblock>
+				    <translate x="2.5" y="-0.95" z="6"/>
+				    <scale x="1" y="0.01" z="0.1"/>
+				    <object type="primitive" name="cube" >
+					<diffuse r=".9" g=".9" b=".9"/>
+				    </object>
+				</transblock>
+
+
+        <!-- ROOF -->
+				<transblock>
+				    <translate x="0" y="3" z="0"/>
+				    <scale x="12" y="0.1" z="12"/>
+				    <object type="primitive" name="cube" >
+
+					<diffuse r=".9" g=".9" b=".9"/>
+          <ambient r=".8" g=".8" b=".8"/>
+				    </object>
+				</transblock>
+
+        <transblock>
+				    <translate x="0" y="3" z="12"/>
+				    <scale x="12" y="0.1" z="12"/>
+				    <object type="primitive" name="cube" >
+              <texture file=":/textures/sky.jpg" u="0" v="0"/>
+					<diffuse r=".9" g=".9" b=".9"/>
+          <ambient r=".8" g=".8" b=".8"/>
+				    </object>
+				</transblock>
+
+
+
+
+
+
+        <!-- FLOOR -->
+				<transblock>
+				    <translate x="0" y="-1" z="0"/>
+				    <scale x="12" y="0.1" z="12"/>
+				    <object type="primitive" name="cube" >
+            <texture file=":/textures/marble.jpg" u="1" v="1"/>
+					<diffuse r=".9" g=".9" b=".9"/>
+				    </object>
+				</transblock>
+
+        <!-- FLOOR -->
+				<transblock>
+				    <translate x="0" y="-1" z="12"/>
+				    <scale x="12" y="0.1" z="12"/>
+				    <object type="primitive" name="cube" >
+            <texture file=":/textures/floor.jpg" u="1" v="1"/>
+					<diffuse r=".8549" g=".6471" b=".1255"/>
+				    </object>
+				</transblock>
+
+
+
+
+
+        <!-- WHITTED IMAGE -->
+
+				<transblock>
+				    <translate x="-5.95" y="1" z="2"/>
+				    <scale x=".01" y="1.5" z="1.5"/>
+				    <object type="primitive" name="cube" >
+            <texture file=":/textures/whitted.png" u="1" v="1"/>
+					<diffuse r=".2" g=".2" b=".2"/>
+				    </object>
+				</transblock>
+
+        <transblock>
+				    <translate x="-5.95" y="1" z="2.75"/>
+				    <scale x="1" y="1" z="1.3"/>
+            <rotate x="0" y="0" z="1" angle="-90"/>
+            <rotate x="0" y="1" z="0" angle="-90"/>
+            <object type="primitive" name="mesh" filename=":/mesh/frame.obj">
+					<diffuse r=".8549" g=".6471" b=".1255"/>
+				    </object>
+				</transblock>
+
+
+
+        <!-- WHITTED IMAGE -->
+
+				<transblock>
+				    <translate x="-5.95" y="1" z="-2"/>
+				    <scale x=".01" y="1.5" z="1.5"/>
+				    <object type="primitive" name="cube" >
+            <texture file=":/textures/Mona-Lisa.jpg" u="1" v="1"/>
+					<diffuse r=".2" g=".2" b=".2"/>
+				    </object>
+				</transblock>
+
+        <transblock>
+				    <translate x="-5.95" y="1" z="-1.28"/>
+				    <scale x="1" y="1" z="1.3"/>
+            <rotate x="0" y="0" z="1" angle="-90"/>
+            <rotate x="0" y="1" z="0" angle="-90"/>
+            <object type="primitive" name="mesh" filename=":/mesh/frame.obj">
+					<diffuse r=".8549" g=".6471" b=".1255"/>
+				    </object>
+				</transblock>
+
+
+
+        <!-- WHITTED IMAGE -->
+
+				<transblock>
+				    <translate x="5.95" y="1" z="2"/>
+				    <scale x=".01" y="1.5" z="1.5"/>
+				    <object type="primitive" name="cube" >
+
+            <texture file=":/textures/image1.png" u="1" v="1"/>
+					<diffuse r=".2" g=".2" b=".2"/>
+				    </object>
+				</transblock>
+
+        <transblock>
+				    <translate x="5.95" y="1" z="1.44"/>
+				    <scale x="1" y="1" z="1.3"/>
+            <rotate x="0" y="0" z="1" angle="90"/>
+            <rotate x="0" y="1" z="0" angle="90"/>
+            <object type="primitive" name="mesh" filename=":/mesh/frame.obj">
+					<diffuse r=".8549" g=".6471" b=".1255"/>
+				    </object>
+				</transblock>
+
+
+
+        <!-- WHITTED IMAGE -->
+
+				<transblock>
+				    <translate x="5.95" y="1" z="-2"/>
+				    <scale x=".01" y="1.5" z="1.5"/>
+				    <object type="primitive" name="cube" >
+            <texture file=":/textures/Scream.jpg" u="1" v="1"/>
+					<diffuse r=".2" g=".2" b=".2"/>
+				    </object>
+				</transblock>
+
+        <transblock>
+				    <translate x="5.95" y="1" z="-2.56"/>
+				    <scale x="1" y="1" z="1.3"/>
+            <rotate x="0" y="0" z="1" angle="90"/>
+            <rotate x="0" y="1" z="0" angle="90"/>
+            <object type="primitive" name="mesh" filename=":/mesh/frame.obj">
+					<diffuse r=".8549" g=".6471" b=".1255"/>
+				    </object>
+				</transblock>
+
+
+        <!-- CLOSED DOOR -->
+
+        <transblock>
+				    <translate x="-2.93" y="-1" z="-5.97"/>
+				    <scale x="1" y="1" z="1"/>
+				    <object type="primitive" name="mesh" filename=":/mesh/Door_Component_BI3.obj">
+					<diffuse r=".8" g=".8" b=".8"/>
+				    </object>
+				</transblock>
+
+
+
+
+
+
+        <!-- OBJECT -->
+				<transblock>
+					<translate x="0.55" y="-0.75" z="0"/>
+				    <scale x="1.25" y="1.25" z="1.25"/>
+            <rotate x="0" y="1" z="0" angle="90"/>
+				    <object type="primitive" name="mesh" filename=":/mesh/Koltuk.obj">
+					<diffuse r=".3" g=".3" b=".5"/>
+				    </object>
+				</transblock>
+
+        <transblock>
+					<translate x="-0.55" y="-0.75" z="0"/>
+				    <scale x="1.25" y="1.25" z="1.25"/>
+            <rotate x="0" y="1" z="0" angle="-90"/>
+				    <object type="primitive" name="mesh" filename=":/mesh/Koltuk.obj">
+					<diffuse r=".3" g=".3" b=".5"/>
+				    </object>
+				</transblock>
+
+
+        <!-- ROOM1 LIGHTS -->
+        <transblock>
+					<translate x="-2" y="1.75" z="5.9"/>
+				    <scale x="2" y="2" z="2"/>
+            <rotate x="0" y="1" z="0" angle="180"/>
+				    <object type="primitive" name="mesh" filename=":/mesh/3D_sconce_only.obj">
+              <diffuse r="1" g="1" b="1"/>
+              <ambient r="1" g="1" b="1"/>
+				    </object>
+				</transblock>
+
+
+        <transblock>
+					<translate x="2" y="1.75" z="-5.9"/>
+				    <scale x="2" y="2" z="2"/>
+            <rotate x="0" y="1" z="0" angle="0"/>
+				    <object type="primitive" name="mesh" filename=":/mesh/3D_sconce_only.obj">
+              <diffuse r="1" g="1" b="1"/>
+              <ambient r="1" g="1" b="1"/>
+				    </object>
+				</transblock>
+
+
+
+
+        <!-- ROOM2 LIGHTS -->
+       <transblock>
+					<translate x="-3.45" y="2.0666567" z="17.96"/>
+				    <scale x="2" y="2" z="2"/>
+            <rotate x="0" y="1" z="0" angle="180"/>
+				    <object type="primitive" name="mesh" filename=":/mesh/3D_sconce_only.obj">
+					<diffuse r="1" g="1" b="1"/>
+          <ambient r="1" g="1" b="1"/>
+				    </object>
+				</transblock>
+
+
+        <transblock>
+					<translate x="0.166033" y="2.049" z="6.190674"/>
+				    <scale x="2" y="2" z="2"/>
+            <rotate x="0" y="1" z="0" angle="0"/>
+				    <object type="primitive" name="mesh" filename=":/mesh/3D_sconce_only.obj">
+					<diffuse r="1" g="1" b="1"/>
+          <ambient r="1" g="1" b="1"/>
+				    </object>
+				</transblock>
+
+
+        <!-- STATUE -->
+
+        <transblock>
+					<translate x="0" y="-0.2" z="12"/>
+				    <scale x="2" y="2" z="2"/>
+            <rotate x="0" y="1" z="0" angle="180"/>
+				    <object type="primitive" name="mesh" filename=":/mesh/teapot.obj">
+					<diffuse r=".9" g=".9" b=".9"/>
+				    </object>
+				</transblock>
+
+        <transblock>
+					<translate x="3.8" y=".2" z="16"/>
+				    <scale x="3" y="3" z="3"/>
+            <rotate x="0" y="1" z="0" angle="180"/>
+				    <object type="primitive" name="mesh" filename=":/mesh/dragon.obj">
+					<diffuse r=".9" g=".9" b=".9"/>
+				    </object>
+				</transblock>
+
+
+        <transblock>
+					<translate x="-4.5" y="0.5" z="16"/>
+				    <scale x="3.5" y="3.5" z="3.5"/>
+            <rotate x="0" y="1" z="0" angle="140"/>
+				    <object type="primitive" name="mesh" filename=":/mesh/buddha.obj">
+					<diffuse r=".9" g=".9" b=".9"/>
+				    </object>
+				</transblock>
+
+
+
+
+
+
+
+
+			</object>
+		</transblock>
+    </object>
+
+</scenefile>

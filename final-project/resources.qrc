@@ -1,0 +1,45 @@
+<RCC>
+    <qresource prefix="/shaders">
+        <file alias="default.frag">shaders/shader.frag</file>
+        <file alias="default.vert">shaders/shader.vert</file>
+        <file>shaders/phong.frag</file>
+        <file>shaders/phong.vert</file>
+        <file alias="shadow.geom">shaders/shadow.geom</file>
+        <file alias="shadow.vert">shaders/shadow.vert</file>
+        <file alias="shadow.frag">shaders/shadow.frag</file>
+        <file alias="dir_shadow.frag">shaders/dir_shadow.frag</file>
+        <file alias="dir_shadow.vert">shaders/dir_shadow.vert</file>
+        <file alias="quad.frag">shaders/quad.frag</file>
+        <file alias="quad.vert">shaders/quad.vert</file>
+        <file alias="gbuffer.frag">shaders/gbuffer.frag</file>
+        <file alias="gbuffer.vert">shaders/gbuffer.vert</file>
+        <file alias="ssaoshader.frag">shaders/ssaoshader.frag</file>
+        <file alias="ssaoshader.vert">shaders/ssaoshader.vert</file>
+        <file alias="blur.vert">shaders/blur.vert</file>
+        <file alias="blur.frag">shaders/blur.frag</file>
+        <file alias="final.frag">shaders/final_shader.frag</file>
+        <file alias="final.vert">shaders/final_shader.vert</file>
+    </qresource>
+    <qresource prefix="/textures">
+        <file alias="whitted.png">textures/whitted.png</file>
+        <file alias="floor.jpg">textures/floor.jpg</file>
+        <file alias="marble.jpg">textures/marble.jpg</file>
+        <file alias="Mona-Lisa.jpg">textures/Mona-Lisa.jpg</file>
+        <file alias="Scream.jpg">textures/Scream.jpg</file>
+        <file alias="sky.jpg">textures/sky.jpg</file>
+        <file alias="image1.png">textures/image1.png</file>
+    </qresource>
+    <qresource prefix="/mesh">
+        <file alias="buddha.obj">mesh/buddha.obj</file>
+        <file alias="dragon.obj">mesh/dragon.obj</file>
+        <file alias="Koltuk.obj">mesh/Koltuk.obj</file>
+        <file alias="frame.obj">mesh/frame.obj</file>
+        <file alias="Door_Component_BI3.obj">mesh/Door_Component_BI3.obj</file>
+        <file alias="3D_sconce_only.obj">mesh/3D_sconce_only.obj</file>
+        <file alias="opendoor.obj">mesh/opendoor.obj</file>
+        <file alias="teapot.obj">mesh/teapot.obj</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>museum.xml</file>
+    </qresource>
+</RCC>
